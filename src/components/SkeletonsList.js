@@ -3,9 +3,9 @@ import ColletionCard from './ColletionCard'
 
 const SkeletonsList = ({SkeletonsListData}) => {
   return (
-    <div className=''> 
+    <div className='flex overflow-x-scroll scrollbar-hide cursor-pointer border-b-2 border-cyan-700 pb-2 pt-12'> 
       {SkeletonsListData.map(skeletons => (
-         <div className=''>
+         <div className='pr-4'>
             <ColletionCard
             key={skeletons.id}
             id={skeletons.id}

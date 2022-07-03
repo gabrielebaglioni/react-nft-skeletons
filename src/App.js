@@ -43,14 +43,7 @@ function App() {
   return(
     <div className='app'>
       <Header/>
-
-
-      <ColletionCard
-       id={0} 
-       name={'CaveMan'} 
-       traits={[{'value' : 1}]} 
-       image='https://lh3.googleusercontent.com/RfaomEs0FARQbMtC58tIFiVv6XqYG-Y9C164HlkLMq60W4DhtuzlRl3AHEY8xcRW8NsuOXRIu3s6JDOW_Pj9xEgCdL_YR6aEhL6_PNw=w350' />
-
+      
      <SkeletonsList SkeletonsListData={SkeletonsListData} />      
     </div>
   )
