@@ -11,8 +11,10 @@ flex: 0.75;
 }
 .owner > div{
    margin: 0 5px;
+   cursor: pointer;
 }
 .owner-img-container > img{
    height: 100%;
    width: 100%;
+   
 }
