@@ -3,7 +3,7 @@ import ColletionCard from './ColletionCard'
 
 const SkeletonsList = ({SkeletonsListData}) => {
   return (
-    <div className='flex overflow-x-scroll scrollbar-hide cursor-pointer border-b-2 border-cyan-700 pb-2 pt-12'> 
+    <div className='flex overflow-x-scroll scrollbar-hide cursor-pointer border-y-2 border-cyan-700 py-7'> 
       {SkeletonsListData.map(skeletons => (
          <div className='pr-4'>
             <ColletionCard

@@ -1,10 +1,11 @@
 
 import './App.css';
-import ColletionCard from './components/ColletionCard';
+// import ColletionCard from './components/ColletionCard';
 import Header from './components/Header';
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import SkeletonsList from './components/SkeletonsList';
+import Main from './components/Main';
 
 function App() {
 
@@ -43,7 +44,14 @@ function App() {
   return(
     <div className='app'>
       <Header/>
-      
+
+      <Main/>
+      {/* <ColletionCard
+       id={0} 
+       name={'CaveMan'} 
+       traits={[{'value' : 1}]} 
+       image='https://lh3.googleusercontent.com/RfaomEs0FARQbMtC58tIFiVv6XqYG-Y9C164HlkLMq60W4DhtuzlRl3AHEY8xcRW8NsuOXRIu3s6JDOW_Pj9xEgCdL_YR6aEhL6_PNw=w350' /> */}
+
      <SkeletonsList SkeletonsListData={SkeletonsListData} />      
     </div>
   )
