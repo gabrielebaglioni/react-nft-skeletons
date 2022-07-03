@@ -8,8 +8,8 @@ import axios from 'axios';
 function App() {
 
     // Data from OpenSea
-    const [punkListData, setPunkListData] = useState([]);
-    const [selectedPunk, setSelectedPunk] = useState(0);
+    const [SkeletonsData, setSkeletonsData] = useState([]);
+    const [selectedSkeletons, setSelectedSkeletons] = useState(0);
   
     useEffect(() => {
       const getNFTs = async () => {
@@ -28,7 +28,7 @@ function App() {
         axios.request(options)
           .then(function (response) {
             console.log(response.data.assets)
-            setPunkListData(response.data.assets);
+            setSkeletonsData(response.data.assets);
           })
           .catch(function (error) {
             console.error("err: ", error);
@@ -43,7 +43,10 @@ function App() {
     <div className='app'>
       <Header/>
       <ColletionCard
-       id={0} name={'CaveMan'} traits={[{'value' : 1}]} img='https://lh3.googleusercontent.com/RfaomEs0FARQbMtC58tIFiVv6XqYG-Y9C164HlkLMq60W4DhtuzlRl3AHEY8xcRW8NsuOXRIu3s6JDOW_Pj9xEgCdL_YR6aEhL6_PNw=w350' />
+       id={0} 
+       name={'CaveMan'} 
+       traits={[{'value' : 1}]} 
+       img='https://lh3.googleusercontent.com/RfaomEs0FARQbMtC58tIFiVv6XqYG-Y9C164HlkLMq60W4DhtuzlRl3AHEY8xcRW8NsuOXRIu3s6JDOW_Pj9xEgCdL_YR6aEhL6_PNw=w350' />
     </div>
   )
 }
