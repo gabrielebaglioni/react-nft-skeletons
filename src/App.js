@@ -44,15 +44,13 @@ function App() {
   return(
     <div className='app'>
       <Header/>
-
-      <Main/>
-      {/* <ColletionCard
-       id={0} 
-       name={'CaveMan'} 
-       traits={[{'value' : 1}]} 
-       image='https://lh3.googleusercontent.com/RfaomEs0FARQbMtC58tIFiVv6XqYG-Y9C164HlkLMq60W4DhtuzlRl3AHEY8xcRW8NsuOXRIu3s6JDOW_Pj9xEgCdL_YR6aEhL6_PNw=w350' /> */}
-
-     <SkeletonsList SkeletonsListData= {SkeletonsListData} setSelectedSkeletons={setSelectedSkeletons} />      
+     {SkeletonsListData.length > 0 && (
+        <>
+           <Main SkeletonsListData= {SkeletonsListData} selectedSkeletons={selectedSkeletons} />
+           <SkeletonsList SkeletonsListData= {SkeletonsListData} setSelectedSkeletons={setSelectedSkeletons} />   
+        </>
+      )}
+       
     </div>
   )
 }
