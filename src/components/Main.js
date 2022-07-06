@@ -30,7 +30,7 @@ const Main = ({selectedSkeletons, SkeletonsListData}) => {
                <span className=''>{activeSkeletons.token_id}</span>
                <div className= 'owner text-white flex mt-3 justify-between'>
                   <div className='owner-img-container w-12 h-12 rounded-full overflow-hidden object-contain'>
-                    <img className='cursor-pointer' src={activeSkeletons.owner.profile_img_url} alt='' /> 
+                    <img className='' src={activeSkeletons.owner.profile_img_url} alt='' /> 
                     {/* <img className='' src='https://storage.googleapis.com/opensea-static/opensea-profile/24.png' alt='' />  */}
                   </div>
                   <div className='owner-details flex flex-1 items-center '>
